@@ -38,7 +38,7 @@ launchButton.addEventListener(
   // type of event
   'click',
   // the callback that should run
-  launch
+  launch,
 )
 
 // 👉 TASK 4- Create a function to confirm the launch.
@@ -76,7 +76,9 @@ function onEscape(event) {
 
   // the EVENT OBJECT
   // event.key or event.code
-
+  if (event.key === 'Escape') {
+    modal.classList.add('off')
+  }
 }
 document.addEventListener('keydown', onEscape)
 
