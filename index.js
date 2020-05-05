@@ -68,7 +68,13 @@ cancelButton.addEventListener(
 // the user hits the Escape key on their keyboard.
 // Add it as an event listener for 'keydown' events on document.
 function onEscape(event) {
-  // things
+  // this runs on ANY key 'keydown' event
+  // we only want to shut down the modal if it's the Escape key
+  // HOW DO WE KNOW WHAT EXACTLY GOT 'KEYED DOWN'?????
+  // how does the browser inform us here of that info??
+
+  // the EVENT OBJECT
+  debugger
 }
 document.addEventListener('keydown', onEscape)
 
