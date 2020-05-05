@@ -30,6 +30,8 @@ function launch(event) {
   // contains code that should run in the future
   // take out the off classname from the modal
   modal.classList.remove('off')
+  successMessage.classList.add('off')
+  failureMessage.classList.add('off')
 }
 // on click of launchButton, run the launch function pretty please
 launchButton.addEventListener(
