@@ -52,11 +52,14 @@ confirmButton.addEventListener('click', yes)
 // It should close the modal and display a failure report.
 // Add it as a listener for clicks on the cancellation button.
 const denyLaunch = (event) => {
+  // console.log('denyLaunch runs')
+  // event has a wealth of info about the event
+  // which we could use right here!
   modal.classList.add('off')
   failureMessage.classList.remove('off')
 }
 cancelButton.addEventListener(
-  'clic', denyLaunch
+  'click', denyLaunch
 )
 
 // 👉 TASK 6- Create a function that closes the modal if
