@@ -98,6 +98,10 @@ allElementsArray.forEach(element => {
   element.addEventListener('click', theClick)
 })
 
+get('.container').addEventListener('click', event => {
+  console.log('evil grin, stopping propagation of the event')
+  event.stopPropagation() // NOT ADVISED!!!!!!!!!!!!!!
+})
 
 // 👉 TASK 8- Create a link and prevent its default behavior
 
