@@ -70,11 +70,13 @@ cancelButton.addEventListener(
 function onEscape(event) {
   // this runs on ANY key 'keydown' event
   // we only want to shut down the modal if it's the Escape key
+
   // HOW DO WE KNOW WHAT EXACTLY GOT 'KEYED DOWN'?????
   // how does the browser inform us here of that info??
 
   // the EVENT OBJECT
-  debugger
+  // event.key or event.code
+
 }
 document.addEventListener('keydown', onEscape)
 
