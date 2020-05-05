@@ -32,6 +32,8 @@ function launch(event) {
   modal.classList.remove('off')
   successMessage.classList.add('off')
   failureMessage.classList.add('off')
+
+  // absolute power right here
 }
 // on click of launchButton, run the launch function pretty please
 launchButton.addEventListener(
