@@ -3,7 +3,9 @@ console.log('project is up')
 // 👉 TASK 1- Create a function called 'get'
 // that takes a CSS selector as its argument
 // and executes document.querySelector with the argument.
-
+function get(selector){
+  return document.querySelector(selector)
+}
 
 // 👉 TASK 2- Using 'get', select the following elements from the DOM:
 
