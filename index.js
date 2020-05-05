@@ -91,6 +91,7 @@ document.addEventListener('keydown', onEscape)
 function theClick(event) {
   console.log('🎯 the target    ', event.target)
   console.log('🧭 current target', event.currentTarget)
+  console.log('\n')
 }
 const allElementsArray = Array.from(document.all)
 allElementsArray.forEach(element => {
