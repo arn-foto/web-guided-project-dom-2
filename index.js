@@ -3,7 +3,7 @@ console.log('project is up')
 // 👉 TASK 1- Create a function called 'get'
 // that takes a CSS selector as its argument
 // and executes document.querySelector with the argument.
-function get(selector){
+function get(selector) {
   return document.querySelector(selector)
 }
 
@@ -42,7 +42,11 @@ launchButton.addEventListener(
 // 👉 TASK 4- Create a function to confirm the launch.
 // It should close the modal and display a success report.
 // Add it as a listener for clicks on the confirmation button.
-
+const yes = (event) => {
+  modal.classList.add('off')
+  successMessage.classList.remove('off')
+}
+confirmButton.addEventListener('click', yes)
 
 // 👉 TASK 5- Create a function to cancel the launch.
 // It should close the modal and display a failure report.
