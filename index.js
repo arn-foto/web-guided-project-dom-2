@@ -10,17 +10,17 @@ function get(selector){
 // 👉 TASK 2- Using 'get', select the following elements from the DOM:
 
 // BUTTONS
-const launchButton = null
-const confirmButton = null
-const cancelButton = null
+const launchButton = get('#launchButton')
+const confirmButton = get('#confirmButton')
+const cancelButton = get('#cancelButton')
 
 // MESSAGES
-const successMessage = null
-const failureMessage = null
+const successMessage = get('.report.success')
+const failureMessage = get('.report.failure')
 
 // MODAL
-const modal = null
-const modalOpacity = null
+const modal = get('div.modal')
+const modalOpacity = get('div.modal-opacity')
 
 
 // 👉 TASK 3- Create a function that launches!
