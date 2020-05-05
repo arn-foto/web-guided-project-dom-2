@@ -100,8 +100,14 @@ allElementsArray.forEach(element => {
 
 get('.container').addEventListener('click', event => {
   console.log('evil grin, stopping propagation of the event')
-  event.stopPropagation() // NOT ADVISED!!!!!!!!!!!!!!
-  // event.stopImmediatePropagation()
+  event.stopPropagation() // NOT ADVISED!!!!!!!!!!!!!! :(
+  // event.stopImmediatePropagation() // NOT ADVISED!!!!!!!!!!!!!! :(
+
+
+  // another method on event object
+  // event.preventDefault() // COMMON ON SINGLE PAGE APPLICATIONS :)
+  // some elems have "default event listeners"
+  // LINKS will navigate us to the src URL without us needing to write listeners
 })
 
 // 👉 TASK 8- Create a link and prevent its default behavior
